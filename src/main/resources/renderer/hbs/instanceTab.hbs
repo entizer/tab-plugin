@@ -1,0 +1,25 @@
+<script src="{{asset "/instance-tab.js"}}" nonce="{{nonce ""}}" ></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"  nonce="{{nonce}}" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<table class="table" style="width:30%">
+  <tbody>
+    <tr class="success">
+      <td>Status:</td>
+      <td>{{status}}</td>
+    </tr>
+    <tr class="danger">
+      <td>ID:</td>
+      <td>{{id}}</td>
+    </tr>
+    <tr class="warning">
+      <td>Plan:</td>
+      <td>{{instance.plan}} or {{plan}}</td>
+    </tr>
+    <tr>
+      <td>Created By Email</td>
+      <td>{{createdByEmail}} or {{instance.createdByEmail}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button type="button" class="btn btn-primary">Click me!</button>
